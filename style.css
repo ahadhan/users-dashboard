@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tilt Neon', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    /* background-attachment: url("https://img.freepik.com/premium-vector/global-network-connection-world-map-point-line-composition-concept_41981-1644.jpg"); */
+    background-image: url(https://img.freepik.com/premium-vector/global-network-connection-world-map-point-line-composition-concept_41981-1644.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.para{
+    text-decoration: none;
+}
+
+.img{
+    width: fit-content;
+    font-size: large;
+}
+
+.img img{
+    width: 5rem;
+}
+
+nav{
+    background-color: #f3984e;
+    margin-bottom: 0px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+h1{
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+/* Home page */
+
+.bg-img{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    z-index: 0;
+}
+
+.users-bg{
+    margin: 4rem;
+    color: white;
+    /* font-weight: 600; */
+    font-size: larger;
+    
+}
+
+.para{
+    width: 40vw;
+    margin: 2rem;
+    background-color: #f3984e; opacity: 0.9;
+    font-weight: 500;
+    padding: 1rem;
+    text-align: justify;    
+    border-radius: 7px;
+    color: black;
+}
+
+.table-id{
+    display: none;
+}
+
+.btn{
+    background-color: #f3984e;
+    width: fit-content;
+    margin: auto;
+    
+    :hover{
+        background-color: #f47b17;
+    }
+}
+
+
+/* post table */
+
+.posts-table{
+    display: none;
+}
+
+.comments-table{
+    display: none;
+}
+
+
+
+/* Loading modal styles */
+.loading-modal {
+    /* display: none; */
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading-spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  
+
+@media only screen and (max-width: 499px){
+    .sections{
+        display: none;
+        }    
+    .logo{
+        flex-wrap: nowrap;
+    }
+    .img{
+        flex-wrap: nowrap;
+    }
+    .para{
+        width: auto;
+    }
+    .users-bg{
+        display: flex;
+        flex-wrap: wrap;
+        /* width: 90vw; */
+    }
+}

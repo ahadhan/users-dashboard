@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>users-table</title>
+</head>
+<body>
+
+        <!---------- Header & Nav  ---------------->
+
+        <header>
+            <nav class="nav d-flex p-2">
+                <div class="logo d-flex">
+                    <span class="img d-flex"><img src="images/logo-hd-removebg-preview.png" alt="logo img"><h4>User Table</h4></span>
+                </div>
+                <div class="sections  mx-4 mt-1  ">
+                    <span><a  class="para mx-4" href="#">Home</a></span>
+                    <span><a  class="para mx-4" href="#">Users</a></span>
+                </div>                
+            </nav>
+        </header>
+
+
+        <!----------- Home Page----------------->
+
+        <div class="users-bg">
+            <h1>The User Finder</h1>
+            <p class="para">Check out this website! It can show your user's amazing posts, and interactions on these posts likes, comments and many more.</p>
+        </div>
+        <!--------- Main Table  --------------->
+
+     
+        
+  <div id="loading-modal" class="loading-modal">
+    <div class="loading-spinner"></div>
+  </div>
+<div class="btn d-flex"id="userBtn">
+
+
+  <button class="btn justify-center align-items-center"  onclick="fetchUsers()">Show Users</button>
+</div>
+
+<div class="container table-id users-table" id="table-id" >
+  <h1>User Data</h1>
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>More</th>
+      </tr>
+    </thead>
+    <tbody id="table-body-1">
+      
+      
+    </tbody>
+  </table>
+</div>
+
+<div class="container table-id posts-table" id="posts-table" >
+  <h1>Your Posts</h1>
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Body</th>
+        <th>Comments on post</th>
+      </tr>
+    </thead>
+    <tbody id="table-body-2">
+      
+      
+    </tbody>
+  </table>
+</div>
+
+
+<div class="container table-id comments-table" id="comments-table" >
+  <h1>Your Comments</h1>
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Comment body</th>
+      </tr>
+    </thead>
+    <tbody id="table-body-3">
+      
+      
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
+
+        <!------------ Footer  ---------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

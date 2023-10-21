@@ -1,0 +1,19 @@
+                OverView of Website.
+Creating a website which contains users data/profile in the form of table.
+It will have a see more ... option along with every individual user on table.
+That see more ... option will open to new page that will have that user's posts.
+These posts will contain its own comments and other interactions.
+
+
+                Plan to develop it 
+All the data will be fetched/get from Jsonplaceholder. 
+Firstly create a header with Navbar. 
+Than a Table that contains whole users name, email address and etc. and a see more button at the end of table.
+Than there will be final footer at bottom. 
+The see more.. button will redirect user to new page which will containe that user posts.
+These posts contains comments and interactions. 
+
+First I select Theme color for website. 
+Than font family. 
+Than I will use bootstrap for css. 
+and in the last when UI get complete I will add functionality through JS. 
